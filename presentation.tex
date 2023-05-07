@@ -1,0 +1,47 @@
+\documentclass[
+	%sans,			% use sans-serif font
+	%serif,			% use serif-font
+	%mathsans,		% set mathtext to sans-serif
+	%mathserif,		% set mathtext to serif
+	%10pt,
+	10pt,
+	%12pt,
+	t		% add text at the top border of slide
+	%slidescentered,% center text on slide
+	%draft,			% compile as draft version
+	%handout,		% create handout file
+	%notes,			% include nodes in slides
+	%compress		% compress navigation bar
+	xcolor=dvipsnames
+]{beamer}
+
+\usepackage{pgfpages}
+\usepackage{adjustbox}
+\usepackage{acronym}
+\usepackage{hyperref}
+
+\graphicspath{{figures/}}
+
+\usetheme{default}
+
+\setbeamertemplate{itemize items}[circle]
+
+\setbeameroption{show notes on second screen=right} 
+
+\title{Presentation Title}
+\author{Your Name}
+\institute{Your Institution}
+\date{\today}
+
+
+\begin{document}
+
+\begin{frame}
+	\maketitle
+	
+	\def\svgwdith{\textwidth}
+	\input{figures/example.pdf_tex}
+\end{frame}
+
+\end{document}
+
